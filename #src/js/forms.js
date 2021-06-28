@@ -304,9 +304,8 @@ function inputs_init(inputs) {
 				//'+7(999) 999 9999'
 				//'+38(999) 999 9999'
 				//'+375(99)999-99-99'
-				let maskValue = input.dataset.mask;
 				input.classList.add('_mask');
-				Inputmask(maskValue, {
+				Inputmask('+31(999) 999 9999', {
 					//"placeholder": '',
 					clearIncomplete: true,
 					clearMaskOnLostFocus: true,

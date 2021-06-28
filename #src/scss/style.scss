@@ -339,9 +339,42 @@ button.btn-default {
 // === and btn ========================================================================
 
 .input {
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	min-height: 52px;
+	border-radius: 5px;
+	border: 1px solid rgba(#153452, 0.35);
+	background-color: #ffffff;
+	color: $textColor;
+	font-size: 16px;
+	font-weight: 400;
+	width: 100%;
+
+	&::placeholder {
+		color: rgba($textColor, 0.62);
+		font-size: 16px;
+		font-weight: 400;
+	}
 }
 
 .textarea {
+	resize: none;
+	height: 135px;
+	border: 1px solid rgba(#153452, 0.35);
+	border-radius: 5px;
+	padding: 16px 20px;
+	background-color: #ffffff;
+	color: $textColor;
+	font-size: 16px;
+	font-weight: 400;
+	width: 100%;
+
+	&::placeholder {
+		color: rgba($textColor, 0.62);
+		font-size: 16px;
+		font-weight: 400;
+	}
 }
 
 .link {
@@ -353,6 +386,10 @@ button.btn-default {
 	padding-right: 15px;
 	position: relative;
 	transition: all 0.3s ease;
+
+	&.link_blue {
+		color: $mainColor2;
+	}
 
 	&:before {
 		position: absolute;
@@ -369,8 +406,40 @@ button.btn-default {
 	@media (min-width: 992px) {
 		&:hover {
 			color: $mainColor2;
+			&.link_blue {
+				color: $mainColor;
+			}
 			&:before {
 				transform: translateY(-50%) translateX(4px);
+			}
+		}
+	}
+}
+
+.social {
+	display: flex;
+	flex-wrap: wrap;
+
+	& > li {
+		margin-right: 15px;
+		margin-bottom: 15px;
+
+		& > a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 35px;
+			height: 35px;
+			border-radius: 3px;
+			background-color: rgba(#36416c, 0.11);
+			color: #5c6682;
+			font-size: 16px;
+			transition: all .3s ease;
+
+			@media (min-width: 992px) {
+				&:hover {
+					color: $mainColor2;
+				}
 			}
 		}
 	}

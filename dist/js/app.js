@@ -661,9 +661,8 @@ function inputs_init(inputs) {
 				//'+7(999) 999 9999'
 				//'+38(999) 999 9999'
 				//'+375(99)999-99-99'
-				let maskValue = input.dataset.mask;
 				input.classList.add('_mask');
-				Inputmask(maskValue, {
+				Inputmask('+31(999) 999 9999', {
 					//"placeholder": '',
 					clearIncomplete: true,
 					clearMaskOnLostFocus: true,
@@ -884,8 +883,8 @@ if(priceSlider) {
 	if($checkboxWrap.length) {
 		$checkboxWrap.forEach((item, index) => {
 			let input = item.querySelector('input[type="checkbox"]');
-			input.checked = true;
-			item.querySelector('.checkbox-wrap__label').setAttribute('for', `_form${index}`)
+	
+			item.querySelector('.toggle').setAttribute('for', `_form${index}`)
 			input.id = `_form${index}`;
 			
 			if(input.checked) {
@@ -959,11 +958,13 @@ if($header) {
     }
 })();;
 	{
-    let rating = document.querySelector('.rating__stars');
-    if(rating) {
-        let value = rating.dataset.value * 10;
-        let progress = rating.querySelector('.rating__progress');
-        progress.style.width = value + '%';
+    let ratingItems = document.querySelectorAll('.rating__stars');
+    if(ratingItems.length) {
+        ratingItems.forEach(rating => {
+            let value = rating.dataset.value * 10;
+            let progress = rating.querySelector('.rating__progress');
+            progress.style.width = value + '%';
+        })
     }
 };
 	//@@includ e('../common/popup/popup.js');

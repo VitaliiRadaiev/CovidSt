@@ -10,6 +10,11 @@
 		background-color: #fff;
 		box-shadow: 0 0 10px rgba($mainColor, 0.2);
 
+
+		& .burger > span {
+			background-color: $mainColor;
+		}
+
 		@media (min-width: 992px) {
 			& .menu__link {
 				color: $textColor;

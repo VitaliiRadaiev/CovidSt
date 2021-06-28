@@ -51,7 +51,9 @@
 		align-items: center;
 		height: 26px;
 		flex: 0 0 28px;
-		border-right: 2px solid #fff;
+		&:not(:last-child) {
+			border-right: 2px solid #fff;
+		}
 		
 		& svg {
 			display: block;

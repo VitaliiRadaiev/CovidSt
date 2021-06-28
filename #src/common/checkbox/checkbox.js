@@ -3,8 +3,8 @@
 	if($checkboxWrap.length) {
 		$checkboxWrap.forEach((item, index) => {
 			let input = item.querySelector('input[type="checkbox"]');
-			input.checked = true;
-			item.querySelector('.checkbox-wrap__label').setAttribute('for', `_form${index}`)
+	
+			item.querySelector('.toggle').setAttribute('for', `_form${index}`)
 			input.id = `_form${index}`;
 			
 			if(input.checked) {
