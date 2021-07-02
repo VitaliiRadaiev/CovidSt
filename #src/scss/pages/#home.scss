@@ -468,13 +468,15 @@
         text-transform: uppercase;
 
         &:before {
+            display: inline-block;
             content: "";
             width: 10px;
             height: 11px;
             background-color: $mainColor;
             display: inline-block;
             border-radius: 50%;
-            margin-right: 6px;
+            margin-right: 3px;
+            transform: translateY(1px);
         }
 
         &_green {
