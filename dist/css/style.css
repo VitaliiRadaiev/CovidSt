@@ -1998,7 +1998,7 @@ textarea {
 }
 
 .header._is-scroll .burger > span {
-  background-color: #43b91f;
+  background-color: #1b96c6;
 }
 
 .header__body {
@@ -2065,6 +2065,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   min-height: 3em;
+  color: #ffffff;
 }
 
 .header__laguage-current img {
@@ -2079,7 +2080,7 @@ textarea {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #06113a;
+  color: #fff;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
@@ -2154,7 +2155,7 @@ textarea {
   width: 5px;
   border-radius: 4px;
   height: 100%;
-  background-color: #43b91f;
+  background-color: #fff;
 }
 
 .menu__mobile-close:after {
@@ -2168,7 +2169,7 @@ textarea {
   width: 100%;
   height: 5px;
   border-radius: 4px;
-  background-color: #43b91f;
+  background-color: #fff;
 }
 
 .menu__row {
@@ -2195,6 +2196,7 @@ textarea {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  color: #ffffff;
 }
 
 .drop-down {
@@ -2267,14 +2269,13 @@ textarea {
 }
 
 .drop-down__link {
-  color: #06113a;
   display: inline-block;
   width: 100%;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-size: 16px;
-  color: #43b91f;
+  color: #fff;
 }
 
 .menu-item-has-children {
@@ -2330,7 +2331,7 @@ textarea {
 }
 
 .menu-item-has-children .sub-menu__link {
-  color: #06113a;
+  color: #fff;
   display: inline-block;
   width: 100%;
   -webkit-transition: all 0.3s ease;
@@ -3964,8 +3965,8 @@ textarea {
     display: none;
   }
 
-  .header__laguage-current.drop-down__title {
-    color: #ffffff;
+  .header__laguage-lang {
+    color: #06113a;
   }
 
   .header__laguage-lang:hover {
@@ -3991,10 +3992,6 @@ textarea {
   .menu__list > li:not(:last-child) {
     margin-right: 22px;
     margin-bottom: 0;
-  }
-
-  .menu__link {
-    color: #ffffff;
   }
 
   .menu__link:hover {
@@ -4032,6 +4029,7 @@ textarea {
   }
 
   .drop-down__link {
+    color: #43b91f;
     line-height: 30px;
     padding: 0 16px;
     white-space: nowrap;
@@ -4072,6 +4070,7 @@ textarea {
   }
 
   .menu-item-has-children .sub-menu__link {
+    color: #06113a;
     line-height: 30px;
     padding: 0 16px;
     white-space: nowrap;
@@ -4245,7 +4244,7 @@ textarea {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: #fff;
+    background-color: #1b96c6;
     z-index: 51;
     padding: 0 20px;
     display: -webkit-box;
@@ -4313,7 +4312,7 @@ textarea {
   }
 
   .test-b__title-2 {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .get-tested__subtitle {
