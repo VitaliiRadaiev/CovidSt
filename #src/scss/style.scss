@@ -457,12 +457,16 @@ button.btn-default {
 	}
 
 	& h1 {
+		color: $textColor;
 	}
 	& h2 {
+		color: $textColor;
 	}
 	& h3 {
+		color: $textColor;
 	}
 	& h4 {
+		color: $textColor;
 	}
 
 	& h5 {
@@ -471,8 +475,10 @@ button.btn-default {
 		line-height: 1.2em;
 		margin-bottom: 8px;
 		margin-top: 28px;
+		color: $textColor;
 	}
 	& h6 {
+		color: $textColor;
 	}
 
 	& p {

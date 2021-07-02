@@ -584,6 +584,7 @@
                 line-height: 1.2em;
                 text-align: left;
                 margin-bottom: 13px;
+                color: $textColor;
             }
 
             & h4 {
@@ -592,6 +593,7 @@
                 line-height: 1.2em;
                 text-align: left;
                 margin-bottom: 5px;
+                color: $textColor;
             }
         }
     }
@@ -641,6 +643,7 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 1.2em;
+            color: $textColor;
 
             &:last-child {
                 color: rgba($textColor, 0.75);
@@ -709,6 +712,7 @@
         font-weight: 400;
         line-height: 1.2em;
         margin-bottom: 16px;
+        color: $textColor;
         & svg {
             color: $mainColor2;
             margin-right: 16px;
@@ -785,7 +789,7 @@
     &__list-item-text {
         border-bottom: 15px;
         flex: 1 1 auto;
-        color: rgba($textColor, 0.75);
+        color: rgba($textColor, 0.7);
         font-size: 15px;
         font-weight: 400;
         line-height: 1.2em;
@@ -875,6 +879,7 @@
 .free-testing-card {
     background-color: #fff;
     display: block;
+    color: $textColor;
 
     @media (min-width: 768px) {
         display: flex;

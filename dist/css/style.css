@@ -1858,12 +1858,33 @@ textarea {
   margin-bottom: 0;
 }
 
+.text-content h1 {
+  color: #06113a;
+}
+
+.text-content h2 {
+  color: #06113a;
+}
+
+.text-content h3 {
+  color: #06113a;
+}
+
+.text-content h4 {
+  color: #06113a;
+}
+
 .text-content h5 {
   font-size: 22px;
   font-weight: 700;
   line-height: 1.2em;
   margin-bottom: 8px;
   margin-top: 28px;
+  color: #06113a;
+}
+
+.text-content h6 {
+  color: #06113a;
 }
 
 .text-content p {
@@ -3040,6 +3061,7 @@ textarea {
   line-height: 1.2em;
   text-align: left;
   margin-bottom: 13px;
+  color: #06113a;
 }
 
 .locations-b__footer-col.text-content h4 {
@@ -3048,6 +3070,7 @@ textarea {
   line-height: 1.2em;
   text-align: left;
   margin-bottom: 5px;
+  color: #06113a;
 }
 
 .locations-b__footer-col-1 {
@@ -3093,6 +3116,7 @@ textarea {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2em;
+  color: #06113a;
 }
 
 .locations-b__footer-address p:last-child {
@@ -3149,6 +3173,7 @@ textarea {
   font-weight: 400;
   line-height: 1.2em;
   margin-bottom: 16px;
+  color: #06113a;
 }
 
 .test-b__title svg {
@@ -3215,7 +3240,7 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  color: rgba(6, 17, 58, 0.75);
+  color: rgba(6, 17, 58, 0.7);
   font-size: 15px;
   font-weight: 400;
   line-height: 1.2em;
@@ -3290,6 +3315,7 @@ textarea {
 .free-testing-card {
   background-color: #fff;
   display: block;
+  color: #06113a;
 }
 
 .free-testing-card__img {
