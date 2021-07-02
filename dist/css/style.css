@@ -3030,6 +3030,8 @@ textarea {
   margin-bottom: 10px;
   padding: 16px 18px 20px 16px;
   position: relative;
+  display: block;
+  color: #06113a;
 }
 
 .locations-b__list-item-status {
@@ -3294,6 +3296,7 @@ textarea {
   background-color: #ffffff;
   position: relative;
   padding-right: 61px;
+  color: #06113a;
 }
 
 .test-b__list-item:not(:last-child) {
@@ -3457,7 +3460,6 @@ textarea {
           box-shadow: 0 2px 8px rgba(139, 139, 139, 0.5);
   border-radius: 5px;
   background-color: #ffffff;
-  padding: 22px 20px 22px 63px;
   position: relative;
 }
 
@@ -3481,10 +3483,11 @@ textarea {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  padding: 22px 20px 22px 63px;
 }
 
 .asked-questions__list-text {
-  padding: 13px 0 5px;
+  padding: 0px 20px 22px 63px;
   display: none;
 }
 
@@ -3727,6 +3730,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #06113a;
 }
 
 .latest-news__img {
@@ -4432,10 +4436,6 @@ textarea {
     margin-bottom: 25px;
   }
 
-  .asked-questions__list > li {
-    padding-left: 51px;
-  }
-
   .asked-questions__list > li > svg {
     left: 18px;
     font-size: 22px;
@@ -4443,6 +4443,14 @@ textarea {
 
   .asked-questions__list > li:not(:last-child) {
     margin-bottom: 10px;
+  }
+
+  .asked-questions__list-title {
+    padding-left: 51px;
+  }
+
+  .asked-questions__list-text {
+    padding-left: 51px;
   }
 
   .asked-questions-card {

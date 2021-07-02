@@ -457,6 +457,8 @@
         margin-bottom: 10px;
         padding: 16px 18px 20px 16px;
         position: relative;
+        display: block;
+        color: $textColor;
     }
 
     &__list-item-status {
@@ -768,6 +770,7 @@
         background-color: #ffffff;
         position: relative;
         padding-right: 61px;
+        color: $textColor;
 
         &:not(:last-child) {
             margin-bottom: 15px;
@@ -970,12 +973,7 @@
             box-shadow: 0 2px 8px rgba(139, 139, 139, 0.5);
             border-radius: 5px;
             background-color: #ffffff;
-            padding: 22px 20px 22px 63px;
             position: relative;
-
-            @media (max-width: $md3+px) {
-                padding-left: 51px;
-            }
 
             & > svg {
                 color: $mainColor2;
@@ -1006,6 +1004,11 @@
         line-height: 1.2em;
         cursor: pointer;
         transition: all 0.3s ease;
+        padding: 22px 20px 22px 63px;
+
+        @media (max-width: $md3+px) {
+            padding-left: 51px;
+        }
 
         @media (min-width: 992px) {
             &:hover {
@@ -1015,8 +1018,12 @@
     }
 
     &__list-text {
-        padding: 13px 0 5px;
+        padding: 0px 20px 22px 63px;
         display: none;
+
+        @media (max-width: $md3+px) {
+            padding-left: 51px;
+        }
     }
 
     &__link {
@@ -1335,6 +1342,7 @@
 
     &__item {
         display: flex;
+        color: $textColor;
     }
 
     &__img {
