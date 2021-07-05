@@ -8,18 +8,18 @@ window.addEventListener('load', function () {
 	document.body.classList.add('is-load');
 
 	// ==== ADD PADDING-TOP ================================
-	// {
-	// 	let wrapper = document.querySelector('._page._padding-top');
-	// 	if (wrapper) {
-	// 		let header = document.querySelector('.header');
-	// 		if(header) {
-	// 			const setPedding = () => wrapper.style.paddingTop = header.clientHeight + 'px';
-	// 			setPedding();
-	// 			window.addEventListener('resize', setPedding);
-	// 		}
+	{
+		let wrapper = document.querySelector('._padding-top');
+		if (wrapper) {
+			let header = document.querySelector('.header');
+			if(header) {
+				const setPedding = () => wrapper.style.paddingTop = header.clientHeight + 'px';
+				setPedding();
+				window.addEventListener('resize', setPedding);
+			}
 			
-	// 	}
-	// }
+		}
+	}
 	// ==== AND ADD PADDING-TOP ================================
 
 	//SlideToggle
@@ -1025,6 +1025,44 @@ window.addEventListener('DOMContentLoaded', function() {
 			    position: {lat: markerPosition.lat, lng: markerPosition.lng},
 
 			    map: map,
+
+			    title: '',
+			    label: '',
+
+			   // icon: 'img/contact/googlMarker.svg',
+			});
+
+		}
+	}
+
+	var isMap2 = document.getElementById("map-2");
+	if(isMap2) {
+		var map2;
+		let center = {
+			lat: +isMap2.dataset.markPositionLat,
+			lng: +isMap2.dataset.markPositionLng
+		}
+		
+		let markerPosition = {
+			lat: +isMap2.dataset.centerLat,
+			lng:  +isMap2.dataset.centerLng,
+		}
+
+		function initMap() {
+
+			map2 = new google.maps.Map(document.getElementById('map-2'), {
+				center: {lat: center.lat, lng: center.lng},
+
+				zoom: 16,
+
+				//styles: 
+			});
+
+			var marker = new google.maps.Marker({
+
+			    position: {lat: markerPosition.lat, lng: markerPosition.lng},
+
+			    map: map2,
 
 			    title: '',
 			    label: '',

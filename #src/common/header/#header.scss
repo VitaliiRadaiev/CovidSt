@@ -6,24 +6,17 @@
 	transition: all 0.4s ease;
 	z-index: 50;
 
+	&.header_solid {
+		background-color: $mainColor4;
+		box-shadow: 0 0 10px rgba($mainColor, 0.2);
+	}
+
 	&._is-scroll {
-		background-color: #fff;
+		background-color: $mainColor4;
 		box-shadow: 0 0 10px rgba($mainColor, 0.2);
 
 
-		& .burger > span {
-			background-color: $mainColor2;
-		}
 
-		@media (min-width: 992px) {
-			& .menu__link {
-				color: $textColor;
-			}
-
-			& .header__laguage-current {
-				color: $textColor;
-			}
-		}
 	}
 
 	&__body {
@@ -170,7 +163,7 @@
 		width: 100%;
 		height: 100%;
 		overflow: auto;
-		background-color: $mainColor2;
+		background-color: $mainColor4;
 		z-index: 51;
 		padding: 0 20px;
 		display: flex;

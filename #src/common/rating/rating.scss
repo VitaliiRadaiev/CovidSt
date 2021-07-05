@@ -1,3 +1,33 @@
+.rating-wrap {
+	display: flex;
+	align-items: center;
+	min-height: 62px;
+	position: relative;
+	padding: 8px 20px;
+	position: relative;
+
+	@media (min-width: 480px) {
+		justify-content: center;
+	}
+
+	&:before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 100%;
+		width: 100vw;
+		background-color: #fff;
+		border-bottom: 1px solid #e2eaef;
+		z-index: 1;
+	}
+
+	& .rating {
+		position: relative;
+		z-index: 2;
+	}
+}
 .rating {
 
 	@media (min-width: 480px) {
