@@ -83,6 +83,16 @@
                 padding: 0 15px;
                 flex: 1 1 auto;
             }
+
+            @media (max-width: $md3+px) {
+                &:first-child {
+                    min-height: 110px;
+                }
+
+                &:nth-child(2) {
+                    padding-right: 0;
+                }
+            }
         }
     }
 
