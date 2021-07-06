@@ -4106,11 +4106,6 @@ textarea {
   margin-bottom: 35px;
 }
 
-.available-tests__list {
-  margin: 0 auto;
-  max-width: 862px;
-}
-
 .available-tests__list > li:not(:last-child) {
   margin-bottom: 18px;
 }
