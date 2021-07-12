@@ -1,0 +1,29 @@
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > li {
+        color: rgba(#fff, 0.67);
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.3em;
+
+        &:not(:last-child) {
+            &:after {
+                content: "»";
+                margin: 0 5px 0 5px;
+            }
+        }
+
+        & a {
+            color: rgba(#fff, 0.67);
+            transition: all 0.3s ease;
+            text-decoration: underline;
+            @media (min-width: 992px) {
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    @@include('common/header/_header.html',{
+    "bg": ""
+    })
+    <!-- == // TOP LINE ================== -->
+
+
+    <main class="_page contact-page">
+        <section class="hero-v2 _padding-top">
+            <div class="hero-v2__bg ibg">
+                <img src="img/photo/header-bg.jpg" alt="">
+            </div>
+            <div class="hero-v2__body container">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        Contact
+                    </li>
+                </ul>
+                <h1 class="hero-v2__title">
+                    Contact
+                </h1>
+                <div class="hero-v2__subtitle">
+                    Heb je een vraag of kom je ergens niet uit?
+                    Wij helpen je graag.
+                </div>
+                <a href="mailto:info@speedcovidtest.nl" class="hero-v2__link">
+                    <i class="fas fa-envelope"></i>
+                    info@speedcovidtest.nl
+
+                </a>
+                <a href="tel:0852735170" class="hero-v2__link">
+                    <i class="fas fa-phone"></i>
+                    085-2735170
+                </a>    
+            </div>
+        </section>
+
+        <section class="locations-b">
+            <div class="container">
+                <h2 class="locations-b__title title-2">Onze locaties</h2>
+                <div class="locations-b__subtitle">DAGELIJKS GEOPEND VAN 07:00 TOT 21:00</div>
+                <div class="locations-b__body">
+                    <div class="locations-b__list">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="locations-b__list-item">
+                                        <div class="locations-b__list-item-status locations-b__list-item-status_green">
+                                            open
+                                        </div>
+                                        <div class="locations-b__list-item-title">
+                                            Amsterdam Art Hotel
+                                        </div>
+                                        <ul class="locations-b__list-item-text">
+                                            <p>Westcord Art Hotel Amsterdam</p>
+                                            <p>Spaarndammerdijk 302</p>
+                                            <p>1013 ZX Amsterdam</p>
+                                        </ul>
+                                        <div class="locations-b__list-item-time">
+                                            <i class="fas fa-clock"></i>
+                                            Ma t/m vr 7 - 19 • za 8 - 15 • zo 10 - 14
+                                        </div>
+                                        <span class="locations-b__link link">
+                                            Maak een afspraak
+                                        </span>
+                                    </a>
+                                    <a href="#" class="locations-b__list-item">
+                                        <div class="locations-b__list-item-status locations-b__list-item-status_red">
+                                            GESLOTEN
+                                        </div>
+                                        <div class="locations-b__list-item-title">
+                                            Amsterdam Art Hotel
+                                        </div>
+                                        <ul class="locations-b__list-item-text">
+                                            <p>Westcord Art Hotel Amsterdam</p>
+                                            <p>Spaarndammerdijk 302</p>
+                                            <p>1013 ZX Amsterdam</p>
+                                        </ul>
+                                        <div class="locations-b__list-item-time">
+                                            <i class="fas fa-clock"></i>
+                                            Ma t/m vr 7 - 19 • za 8 - 15 • zo 10 - 14
+                                        </div>
+                                        <span class="locations-b__link link">
+                                            Maak een afspraak
+                                        </span>
+                                    </a>
+                                    <a href="#" class="locations-b__list-item">
+                                        <div class="locations-b__list-item-status locations-b__list-item-status_green">
+                                            open
+                                        </div>
+                                        <div class="locations-b__list-item-title">
+                                            Amsterdam Art Hotel
+                                        </div>
+                                        <ul class="locations-b__list-item-text">
+                                            <p>Westcord Art Hotel Amsterdam</p>
+                                            <p>Spaarndammerdijk 302</p>
+                                            <p>1013 ZX Amsterdam</p>
+                                        </ul>
+                                        <div class="locations-b__list-item-time">
+                                            <i class="fas fa-clock"></i>
+                                            Ma t/m vr 7 - 19 • za 8 - 15 • zo 10 - 14
+                                        </div>
+                                        <span class="locations-b__link link">
+                                            Maak een afspraak
+                                        </span>
+                                    </a>
+                                    <a href="#" class="locations-b__list-item">
+                                        <div class="locations-b__list-item-status locations-b__list-item-status_green">
+                                            open
+                                        </div>
+                                        <div class="locations-b__list-item-title">
+                                            Amsterdam Art Hotel
+                                        </div>
+                                        <ul class="locations-b__list-item-text">
+                                            <p>Westcord Art Hotel Amsterdam</p>
+                                            <p>Spaarndammerdijk 302</p>
+                                            <p>1013 ZX Amsterdam</p>
+                                        </ul>
+                                        <div class="locations-b__list-item-time">
+                                            <i class="fas fa-clock"></i>
+                                            Ma t/m vr 7 - 19 • za 8 - 15 • zo 10 - 14
+                                        </div>
+                                        <span class="locations-b__link link">
+                                            Maak een afspraak
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <div class="locations-b__map" id="map"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-b">
+            <div class="container">
+                <form action="" class="contact-form">
+                    <h3 class="contact-form__title title-3">
+                        <i class="fas fa-envelope"></i>
+                        Contact opnemen
+                    </h3>
+                    <div class="contact-form__text text-content">
+                        Heeft u een vraag over één van onze testen of wilt u een afspraak inplannen voor maatwerk met betrekking tot het testen van meerdere werknemers op uw bedrijf. Vul dan het onderstaande contactformulier in.
+                    </div>
+                    <div class="contact-form__item">
+                        <input type="text" class="input" placeholder="Naam">
+                    </div>
+                    <div class="contact-form__item">
+                        <input type="email" class="input" placeholder="E-mailadres">
+                    </div>
+                    <div class="contact-form__item">
+                        <input autocomplete="off" type="text" class="input _mask" placeholder="Telefoon">
+                    </div>
+                    <div class="contact-form__item">
+                        <textarea class="textarea" placeholder="Bericht"></textarea>
+                    </div>
+                    <div class="contact-form__item">
+                        <div class="checkbox-wrap">
+                            <label class="toggle">
+                                <input type="checkbox" class="toggle__input" />
+                                <span class="toggle-track">
+                                    <span class="toggle-indicator">
+                                    </span>
+                                </span>
+                                Ik ga akkoord met het privacybeleid en de algemene voorwaarden.
+                            </label>
+                        </div>
+                    </div>
+                    <button class="contact-form__submit btn-default" type="submit">Verstuur bericht</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="get-tested get-tested_dark">
+            <div class="get-tested__img ibg">
+                <img src="img/photo/img2.jpg" alt="">
+            </div>
+            <div class="get-tested__text-wrap">
+                <div class="get-tested__suptitle suptitle">
+                    Een geruststellend gevoel
+                </div>
+                <h2 class="get-tested__title title-2">
+                    Laat je testen
+                </h2>
+                <div class="get-tested__subtitle">
+                    Het is snel en veilig. Al 10.382 mensen gingen je voor.
+                </div>
+                <div class="get-tested__group">
+                    <a href="#" class="get-tested__btn btn-default">
+                        <i class="fas fa-calendar-alt"></i>
+                        Afspraak maken
+                    </a>
+                    <div class="get-tested__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate risus id ultrices.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js.html',{})
+</body>
+
+</html>

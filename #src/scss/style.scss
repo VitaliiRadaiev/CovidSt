@@ -245,7 +245,7 @@ textarea {
 // === title ========================================================================
 .title-1 {
 	font-size: 57px;
-	font-weight: 400;
+	font-weight: 800;
 	line-height: 1.2em;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -257,7 +257,7 @@ textarea {
 }
 .title-2 {
 	font-size: 42px;
-	font-weight: 400;
+	font-weight: 800;
 	line-height: 1.2em;
 
 	@media (max-width: $md3+px) {
@@ -267,7 +267,7 @@ textarea {
 
 .title-3 {
 	font-size: 32px;
-	font-weight: 400;
+	font-weight: 800;
 	line-height: 1.2em;
 	margin-bottom: 16px;
 	& svg {
@@ -278,7 +278,7 @@ textarea {
 
 .title-4 {
 	font-size: 28px;
-	font-weight: 400;
+	font-weight: 800;
 	line-height: 1.2em;
 }
 
@@ -518,15 +518,19 @@ button.btn-default {
 
 	& h1 {
 		color: $textColor;
+		font-weight: 800;
 	}
 	& h2 {
 		color: $textColor;
+		font-weight: 800;
 	}
 	& h3 {
 		color: $textColor;
+		font-weight: 800;
 	}
 	& h4 {
 		color: $textColor;
+		font-weight: 800;
 	}
 
 	& h5 {
@@ -595,11 +599,16 @@ button.btn-default {
 @import "../common/checkbox/checkbox";
 @import "../common/rating/rating";
 @import "../common/hero/hero";
+@import "../common/hero-v2/hero-v2";
+@import "../common/breadcrumbs/breadcrumbs";
+@import "../common/contact-form/contact-form";
+@import "../common/get-tested/get-tested";
 // ==== BLOCKS =====================================================
 
 // ==== PAGES =====================================================
 
 @import "pages/#home";
 @import "pages/location";
+@import "pages/contact";
 
 // ==== AND PAGES =====================================================
