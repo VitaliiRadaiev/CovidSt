@@ -12,6 +12,7 @@
         width: 100%;
         height: 100%;
         z-index: -1;
+        background-color: $mainColor4;
 
         &:before {
             position: absolute;
@@ -91,6 +92,11 @@
             margin-bottom: 10px;
         }
     }
+
+    &__text {
+        max-width: 490px;
+        color: #ffffff;
+    }   
 
     &__link {
         color: #ffffff;

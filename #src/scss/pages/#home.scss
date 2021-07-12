@@ -1155,11 +1155,40 @@
 
 
 .latest-news {
+    &.latest-news_sm {
+        & .latest-news__item-title {
+            font-size: 16px;
+        }
+
+        & .latest-news__link-more {
+            font-size: 16px;
+        }
+        & .latest-news__list {
+            margin-bottom: 15px;
+            & > li {
+                padding-bottom: 5px;
+                border-bottom: 1px solid #cfdfe9;
+                margin-bottom: 18px;
+            }
+        }
+
+        & .latest-news__item {
+            @media (min-width: 992px) {
+                &:hover {
+                    & .latest-news__item-title {
+                        color: $mainColor2;
+                    }
+                }
+            }
+        }
+    }
+
     &__title {
         font-size: 24px;
         font-weight: 800;
         line-height: 1.2em;
         margin-bottom: 16px;
+        
     }
 
     &__list {
@@ -1211,6 +1240,7 @@
         font-weight: 700;
         line-height: 1.2em;
         margin-bottom: 8px;
+        transition: all .3s ease;
     }
 
     &__date {

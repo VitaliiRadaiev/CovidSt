@@ -453,7 +453,6 @@ button.btn-default {
 	}
 }
 
-
 .social {
 	display: flex;
 	flex-wrap: wrap;
@@ -497,7 +496,7 @@ button.btn-default {
 	font-weight: 400;
 	line-height: 1em;
 	text-transform: uppercase;
-	
+
 	& svg {
 		height: 14px;
 		width: auto;
@@ -526,11 +525,18 @@ button.btn-default {
 	}
 	& h3 {
 		color: $textColor;
-		font-weight: 800;
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 1.4em;
+		margin-bottom: 0.4em;
 	}
 	& h4 {
 		color: $textColor;
 		font-weight: 800;
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 1.4em;
+		margin-bottom: 0.2em;
 	}
 
 	& h5 {
@@ -542,6 +548,7 @@ button.btn-default {
 	}
 	& h6 {
 		color: $textColor;
+		font-size: 18px;
 	}
 
 	& p {
@@ -549,6 +556,10 @@ button.btn-default {
 
 		& ~ h5 {
 			margin-top: 28px;
+		}
+
+		& ~ h6 {
+			margin-top: 1.4em;
 		}
 
 		& a {
@@ -610,5 +621,7 @@ button.btn-default {
 @import "pages/#home";
 @import "pages/location";
 @import "pages/contact";
+@import "pages/modular";
+@import "pages/news single";
 
 // ==== AND PAGES =====================================================

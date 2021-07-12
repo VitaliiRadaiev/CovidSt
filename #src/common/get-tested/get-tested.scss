@@ -24,6 +24,43 @@
         }
     }
 
+    &.get-tested_vertical {
+        display: block;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-bottom: 43px;
+
+        & .get-tested__img {
+            min-height: 298px;
+            margin-right: 0;
+            margin-bottom: 31px;
+        }
+
+        & .get-tested__text-wrap {
+            padding: 0 39px 30px 39px;
+        }
+
+        & .get-tested__suptitle {
+            display: none;
+        }
+
+        & .get-tested__title {
+            font-size: 32px;
+        }
+
+        & .get-tested__subtitle {
+            margin-bottom: 18px;
+        }
+
+        & .get-tested__group {
+            display: block;
+        }
+
+        & .get-tested__btn {
+            margin-bottom: 12px;
+        }
+    }
+
     &__img {
         flex: 0 0 38.86%;
         min-height: 343px;
@@ -69,7 +106,6 @@
 
     &__subtitle {
         max-width: 565px;
-        opacity: 0.85;
         color: rgba($textColor, 0.85);
         font-size: 22px;
         font-weight: 400;
@@ -99,7 +135,6 @@
 
     &__text {
         padding-top: 3px;
-        opacity: 0.54;
         color: rgba($textColor, 0.54);
         font-size: 15px;
         font-weight: 400;
