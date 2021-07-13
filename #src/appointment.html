@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    @@include('common/header/_header.html',{
+    "bg": ""
+    })
+    <!-- == // TOP LINE ================== -->
+
+
+    <main class="_page appointment-page">
+        <section class="hero-v3 _padding-top">
+            <div class="hero-v3__bg ibg">
+                <img src="img/photo/header-bg.jpg" alt="">
+            </div>
+            <div class="hero-v3__body container">
+                <h1 class="hero-v3__title">Boek direct uw afspraak</h1>
+                <div class="hero-v3__subtitle">
+                    U kunt direct bij ons terecht. Geen lange wachtrijen, en direct uitslag.
+                </div>
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        Afspraak maken
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="appointment">
+            <div class="appointment__content container">
+                <div class="appointment__nav">
+                    <div class="appointment__nav-item ">
+                        <a href="#" class="l-nav-item active">
+                            1. Test & locatie
+                        </a>
+                    </div>
+                    <div class="appointment__nav-item ">
+                        <a href="#" class="l-nav-item">
+                            2. Extra
+                        </a>
+                    </div>
+                    <div class="appointment__nav-item ">
+                        <a href="#" class="l-nav-item">
+                            3. Datum & tijd
+                        </a>
+                    </div>
+                    <div class="appointment__nav-item ">
+                        <a href="#" class="l-nav-item">
+                            4. Uw gegevens
+                        </a>
+                    </div>
+                    <div class="appointment__nav-item ">
+                        <a href="#" class="l-nav-item">
+                            5. Betaling
+                        </a>
+                    </div>
+                    <div class="appointment__nav-item ">
+                        <a href="#" class="l-nav-item">
+                            6. Klaar
+                        </a>
+                    </div>
+                </div>
+                <form class="appointment__filter filter">
+                    <div class="filter__title">Selecteer een dienst</div>
+                    <div class="filter__body">
+                        <div class="filter__col">
+                            <div class="filter__label">Locatie</div>
+                            <div class="select-wrap">
+                                <select name="" class="_select">
+                                    <option value="0" selected>Selecteer een locatie</option>
+                                    <option value="1">highest price</option>
+                                    <option value="2">Lowest price</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filter__col">
+                            <div class="filter__label">Gewenste test</div>
+                            <div class="select-wrap">
+                                <select name="" class="_select">
+                                    <option value="0" selected>Selecteer een test</option>
+                                    <option value="1">highest price</option>
+                                    <option value="2">Lowest price</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="filter__btn btn-default">Volgende</button>
+                </form>
+                <div class="appointment__footer">
+                    <p>
+                        <i class="far fa-clock"></i> Op een aantal locaties kunt u ook voor een PCR-test
+                        <strong>dezelfde
+                            dag</strong> uw uitslag ontvangen.
+                    </p>
+                    <div class="appointment__footer-text-collapse text-content">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, voluptatibus. Ducimus incidunt tempore obcaecati adipisci. At ab iste recusandae consequatur!
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, voluptatibus. Ducimus incidunt tempore obcaecati adipisci. At ab iste recusandae consequatur!
+                        </p>
+                    </div>
+                    <a href="#" class="appointment__footer-btn link link_blue">Meer informatie</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="locations-b">
+            <div class="container">
+                <h2 class="locations-b__title title-2">Onze locaties</h2>
+                <div class="locations-b__subtitle">DAGELIJKS GEOPEND VAN 07:00 TOT 21:00</div>
+                <div class="locations-b__body">
+                    <div class="locations-b__list">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="locations-b__list-item">
+                                        <div class="locations-b__list-item-status locations-b__list-item-status_green">
+                                            open
+                                        </div>
+                                        <div class="locations-b__list-item-title">
+                                            Amsterdam Art Hotel
+                                        </div>
+                                        <ul class="locations-b__list-item-text">
+                                            <p>Westcord Art Hotel Amsterdam</p>
+                                            <p>Spaarndammerdijk 302</p>
+                                            <p>1013 ZX Amsterdam</p>
+                                        </ul>
+                                        <div class="locations-b__list-item-time">
+                                            <i class="fas fa-clock"></i>
+                                            Ma t/m vr 7 - 19 • za 8 - 15 • zo 10 - 14
+                                        </div>
+                                        <span class="locations-b__link link">
+                                            Maak een afspraak
+                                        </span>
+                                    </a>
+                                    <a href="#" class="locations-b__list-item">
+                                        <div class="locations-b__list-item-status locations-b__list-item-status_red">
+                                            GESLOTEN
+                                        </div>
+                                        <div class="locations-b__list-item-title">
+                                            Amsterdam Art Hotel
+                                        </div>
+                                        <ul class="locations-b__list-item-text">
+                                            <p>Westcord Art Hotel Amsterdam</p>
+                                            <p>Spaarndammerdijk 302</p>
+                                            <p>1013 ZX Amsterdam</p>
+                                        </ul>
+                                        <div class="locations-b__list-item-time">
+                                            <i class="fas fa-clock"></i>
+                                            Ma t/m vr 7 - 19 • za 8 - 15 • zo 10 - 14
+                                        </div>
+                                        <span class="locations-b__link link">
+                                            Maak een afspraak
+                                        </span>
+                                    </a>
+                                    <a href="#" class="locations-b__list-item">
+                                        <div class="locations-b__list-item-status locations-b__list-item-status_green">
+                                            open
+                                        </div>
+                                        <div class="locations-b__list-item-title">
+                                            Amsterdam Art Hotel
+                                        </div>
+                                        <ul class="locations-b__list-item-text">
+                                            <p>Westcord Art Hotel Amsterdam</p>
+                                            <p>Spaarndammerdijk 302</p>
+                                            <p>1013 ZX Amsterdam</p>
+                                        </ul>
+                                        <div class="locations-b__list-item-time">
+                                            <i class="fas fa-clock"></i>
+                                            Ma t/m vr 7 - 19 • za 8 - 15 • zo 10 - 14
+                                        </div>
+                                        <span class="locations-b__link link">
+                                            Maak een afspraak
+                                        </span>
+                                    </a>
+                                    <a href="#" class="locations-b__list-item">
+                                        <div class="locations-b__list-item-status locations-b__list-item-status_green">
+                                            open
+                                        </div>
+                                        <div class="locations-b__list-item-title">
+                                            Amsterdam Art Hotel
+                                        </div>
+                                        <ul class="locations-b__list-item-text">
+                                            <p>Westcord Art Hotel Amsterdam</p>
+                                            <p>Spaarndammerdijk 302</p>
+                                            <p>1013 ZX Amsterdam</p>
+                                        </ul>
+                                        <div class="locations-b__list-item-time">
+                                            <i class="fas fa-clock"></i>
+                                            Ma t/m vr 7 - 19 • za 8 - 15 • zo 10 - 14
+                                        </div>
+                                        <span class="locations-b__link link">
+                                            Maak een afspraak
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <div class="locations-b__map" id="map"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="test-b test-b-v2">
+            <div class="test-b__body container">
+                <div class="test-b__col-1 text-content">
+                    <h2 class="test-b__title title-3">
+                        <i class="fas fa-plane"></i>
+                        Testen voor op reis
+                    </h2>
+                    <div class="test-b__subtitle">
+                        U wilt reizen naar het buitenland en daarvoor heeft u een reiscertificaat nodig.
+                    </div>
+
+                    <h5>PCR Test vereist</h5>
+                    <p>
+                        Om in aanmerking te komen voor een reiscertificaat, dient u zich te laten <a href="#">testen</a>
+                        op de aanwezigheid van het coronavirus.
+                        Het testen gebeurt aan de hand van een PCR test. U heeft de keuze uit de <a href="#">reguliere
+                            PCR</a> test of een <a href="#">PCR speekseltest.</a>
+
+                    </p>
+                    <p>
+                        Bij een negatieve testuitslag ontvangt u van Speed Covid Test een internationaal geaccepteerd
+                        reisdocument.
+
+                    </p>
+
+                    <div class="more-info-card">
+                        <div class="more-info-card__img ibg">
+                            <img src="img/logo/card-logo.jpg" alt="">
+                        </div>
+                        <div class="more-info-card__text-wrap">
+                            <div class="more-info-card__title">Meer informatie</div>
+                            <div class="more-info-card__text">
+                                Bezoek de website van de rijksoverheid voor meer informatie over de voorwaarden van uw
+                                reisbestemming.
+                            </div>
+                            <a href="#" class="more-info-card__link link link_blue">Meer informatie</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="test-b__col-2">
+                    <div class="test-b__img ibg">
+                        <img src="img/photo/test-b-img-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="asked-questions">
+            <div class="asked-questions__body container">
+                <div class="asked-questions__col-1">
+                    <h3 class="asked-questions__title title-3">
+                        <i class="fas fa-question-circle"></i>
+                        Veelgestelde vragen
+                    </h3>
+                    <ul class="asked-questions__list _spollers _one">
+                        <li>
+                            <i class="fas fa-plus"></i>
+                            <div class="asked-questions__list-title _spoller ">
+                                Hoe kan ik mijn afspraak wijzigen?
+                            </div>
+                            <div class="asked-questions__list-text text-content">
+                                Het wijzigen van afspraken doet u door een e-mail te sturen naar info@speedcovidtest.nl.
+                                Afspraken kunnen uiterlijk 3 uur voor de oorspronkelijk reserveringstijd worden
+                                gewijzigd. Binnen 3 uur is het helaas niet mogelijk om een afspraak nog te wijzigen.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-plus"></i>
+                            <div class="asked-questions__list-title _spoller _active">
+                                Hoe komt het dat ik geen afspraakbevestiging per e-mail ontvang?
+                            </div>
+                            <div class="asked-questions__list-text text-content">
+                                Het wijzigen van afspraken doet u door een e-mail te sturen naar info@speedcovidtest.nl.
+                                Afspraken kunnen uiterlijk 3 uur voor de oorspronkelijk reserveringstijd worden
+                                gewijzigd. Binnen 3 uur is het helaas niet mogelijk om een afspraak nog te wijzigen.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-plus"></i>
+                            <div class="asked-questions__list-title _spoller ">
+                                Is de PCR-Speekseltest betrouwbaar?
+                            </div>
+                            <div class="asked-questions__list-text text-content">
+                                Het wijzigen van afspraken doet u door een e-mail te sturen naar info@speedcovidtest.nl.
+                                Afspraken kunnen uiterlijk 3 uur voor de oorspronkelijk reserveringstijd worden
+                                gewijzigd. Binnen 3 uur is het helaas niet mogelijk om een afspraak nog te wijzigen.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-plus"></i>
+                            <div class="asked-questions__list-title _spoller ">
+                                Is Speed Covid Test verbonden aan een geregistreerde BIG arts?
+                            </div>
+                            <div class="asked-questions__list-text text-content">
+                                Het wijzigen van afspraken doet u door een e-mail te sturen naar info@speedcovidtest.nl.
+                                Afspraken kunnen uiterlijk 3 uur voor de oorspronkelijk reserveringstijd worden
+                                gewijzigd. Binnen 3 uur is het helaas niet mogelijk om een afspraak nog te wijzigen.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-plus"></i>
+                            <div class="asked-questions__list-title _spoller ">
+                                Kan ik een reiscertificaat krijgen?
+                            </div>
+                            <div class="asked-questions__list-text text-content">
+                                Het wijzigen van afspraken doet u door een e-mail te sturen naar info@speedcovidtest.nl.
+                                Afspraken kunnen uiterlijk 3 uur voor de oorspronkelijk reserveringstijd worden
+                                gewijzigd. Binnen 3 uur is het helaas niet mogelijk om een afspraak nog te wijzigen.
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="asked-questions__link link">Lees alle veelgestelde vragen</a>
+                </div>
+                <div class="asked-questions__col-2">
+                    <div class="asked-questions-card">
+                        <h3 class="asked-questions-card__title">
+                            <i class="fas fa-user-md"></i>
+                            Onder supervisie van BIG arts
+                        </h3>
+                        <div class="asked-questions-card__text text-content">
+                            <p>
+                                Onze diensten gebeuren volgens de RIVM richtlijnen en onder toezicht van:
+                            </p>
+
+                            <ul>
+                                <li>
+                                    A.W.P. Heera
+                                </li>
+                                <li>
+                                    Registered Physician
+                                </li>
+                                <li>
+                                    Member of Haciz (General
+                                </li>
+                                <li>
+                                    Practitioner Cooperation)
+                                </li>
+                                <li>
+                                    BIG : 29040290401
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="get-tested get-tested_dark">
+            <div class="get-tested__img ibg">
+                <img src="img/photo/img2.jpg" alt="">
+            </div>
+            <div class="get-tested__text-wrap">
+                <div class="get-tested__suptitle suptitle">
+                    Een geruststellend gevoel
+                </div>
+                <h2 class="get-tested__title title-2">
+                    Laat je testen
+                </h2>
+                <div class="get-tested__subtitle">
+                    Het is snel en veilig. Al 10.382 mensen gingen je voor.
+                </div>
+                <div class="get-tested__group">
+                    <a href="#" class="get-tested__btn btn-default">
+                        <i class="fas fa-calendar-alt"></i>
+                        Afspraak maken
+                    </a>
+                    <div class="get-tested__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate risus id ultrices.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js.html',{})
+</body>
+
+</html>

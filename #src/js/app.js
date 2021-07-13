@@ -26,6 +26,7 @@ window.addEventListener('load', function () {
 	@@include('files/dynamic_adapt.js');
 	@@include('forms.js');
 	@@include('pages/home.js');
+	@@include('pages/appointment.js');
 	@@include('../common/checkbox/checkbox.js');
 	@@include('../common/header/header.js');
 	@@include('../common/rating/rating.js');

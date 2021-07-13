@@ -3163,6 +3163,91 @@ textarea {
   letter-spacing: -0.4px;
 }
 
+.hero-v3 {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.hero-v3__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #395c7a;
+}
+
+.hero-v3__bg:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  background-color: rgba(57, 92, 122, 0.5);
+}
+
+.hero-v3__bg:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#395c7a+0,ffffff+100&1+0,0+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#395c7a), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, #395c7a 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, #395c7a 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#395c7a', endColorstr='#00ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+
+.hero-v3__body {
+  min-height: 219px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4px;
+  padding-bottom: 30px;
+}
+
+.hero-v3__body .breadcrumbs {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-v3__title {
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 1.05em;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.hero-v3__subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.36em;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
 .promo-header {
   position: relative;
   background-color: #eaf3f9;
@@ -3738,6 +3823,21 @@ textarea {
   margin-bottom: 100px;
 }
 
+.test-b.test-b-v2 .test-b__col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.test-b.test-b-v2 .test-b__img {
+  height: 100%;
+  min-height: 300px;
+  width: 100%;
+}
+
 .test-b__col-1 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -3762,6 +3862,13 @@ textarea {
 .test-b__title svg {
   color: #1b96c6;
   margin-right: 16px;
+}
+
+.test-b__subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 26px;
 }
 
 .test-b__img {
@@ -4198,9 +4305,9 @@ textarea {
   font-weight: 700;
   line-height: 1.2em;
   margin-bottom: 8px;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .latest-news__date {
@@ -4617,6 +4724,227 @@ textarea {
   font-weight: 700;
 }
 
+.appointment {
+  border-bottom: 1px solid #e4e4ff;
+  margin-bottom: 50px;
+}
+
+.appointment__content {
+  max-width: 1100px;
+}
+
+.appointment__nav {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+  margin-bottom: 16px;
+}
+
+.appointment__nav-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin-bottom: 15px;
+  min-width: 120px;
+}
+
+.appointment__filter {
+  margin-bottom: 28px;
+}
+
+.appointment__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 137px;
+  padding: 15px 0 35px;
+  border-top: 1px solid #e4e4ff;
+}
+
+.appointment__footer > p {
+  color: rgba(6, 17, 58, 0.75);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.appointment__footer > p > strong {
+  font-weight: 600;
+}
+
+.appointment__footer > p > svg {
+  color: #1b96c6;
+  margin-right: 4px;
+}
+
+.appointment__footer .link {
+  font-size: 16px;
+}
+
+.appointment__footer .link:before {
+  content: "\f078";
+  font-size: 12px;
+}
+
+.appointment__footer-text-collapse {
+  max-width: 700px;
+  margin: 0 auto 10px;
+  display: none;
+}
+
+.appointment__footer-btn._is-open::before {
+  -webkit-transform: translate(0, -50%) scale(1, -1);
+      -ms-transform: translate(0, -50%) scale(1, -1);
+          transform: translate(0, -50%) scale(1, -1);
+}
+
+.l-nav-item {
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+  color: rgba(6, 17, 58, 0.55);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2em;
+  min-height: 42px;
+}
+
+.l-nav-item:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 6px;
+  width: 100%;
+  border-radius: 3px;
+  background-color: rgba(6, 17, 58, 0.08);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.l-nav-item.active {
+  color: #1b96c6;
+  font-weight: 700;
+}
+
+.l-nav-item.active:before {
+  background-color: #1b96c6;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.filter__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 6px;
+}
+
+.filter__col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(50% - 5px);
+          flex: 0 1 calc(50% - 5px);
+  margin-bottom: 12px;
+}
+
+.filter__col .select-wrap .select__title {
+  min-height: 53px;
+  padding: 10px 35px 10px 21px;
+}
+
+.filter__col .select-wrap .select__value:before {
+  right: 20px;
+}
+
+.filter__label {
+  color: #1b96c6;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 6px;
+}
+
+.filter__btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.filter__btn.btn-default {
+  min-width: 177px;
+}
+
+.more-info-card {
+  border: 1px solid #c6cdd5;
+  padding: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.more-info-card__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 59px;
+          flex: 0 0 59px;
+  height: 103px;
+  margin-right: 23px;
+}
+
+.more-info-card__text-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.more-info-card__title {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  line-height: 1.2em;
+}
+
+.more-info-card__text {
+  color: #3f496a;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.more-info-card__link {
+  font-size: 15px;
+}
+
+.more-info-card__link:before {
+  font-size: 11px;
+}
+
 @media (min-width: 480px) {
   .rating-wrap {
     -webkit-box-pack: center;
@@ -4846,6 +5174,15 @@ textarea {
 
   .text-img__text {
     max-width: 525px;
+  }
+
+  .filter__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -5089,6 +5426,10 @@ textarea {
     color: #fff;
   }
 
+  .test-b.test-b-v2 .test-b__img {
+    max-width: 613px;
+  }
+
   .test-b__body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5191,6 +5532,16 @@ textarea {
 
   .news-single__btn:hover {
     background-color: rgba(27, 37, 74, 0.18);
+  }
+
+  .appointment__footer .link:hover:before {
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+
+  .l-nav-item:hover:not(.active):before {
+    background-color: rgba(6, 17, 58, 0.18);
   }
 }
 
@@ -5382,6 +5733,23 @@ textarea {
 
   .get-tested__title {
     font-size: 32px;
+  }
+
+  .hero-v3 {
+    margin-bottom: 50px;
+  }
+
+  .hero-v3__body {
+    padding-top: 20px;
+  }
+
+  .hero-v3__title {
+    font-size: 40px;
+  }
+
+  .hero-v3__subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 
   .promo-header {
