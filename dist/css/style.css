@@ -1685,7 +1685,7 @@ textarea {
 .price {
   color: #1b96c6;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 1.2em;
 }
 
@@ -2024,7 +2024,7 @@ textarea {
 .text-content h3 {
   color: #06113a;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 1.4em;
   margin-bottom: 0.4em;
 }
@@ -2033,7 +2033,6 @@ textarea {
   color: #06113a;
   font-weight: 800;
   font-size: 28px;
-  font-weight: 700;
   line-height: 1.4em;
   margin-bottom: 0.2em;
 }
@@ -4552,7 +4551,7 @@ textarea {
 .available-tests-card__title {
   margin-bottom: 8px;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 1.2em;
   margin-right: 33px;
 }
@@ -5079,7 +5078,7 @@ textarea {
 
 .news__title {
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 1.2em;
   margin-bottom: 11px;
 }
@@ -5154,7 +5153,7 @@ textarea {
 
 .news-card__title {
   font-size: 19px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   margin-bottom: 8px;
 }
